@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0a1a3a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* HERO */
+.women-hero {
+    height: 45vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("images/womenheader.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 42px;
+}
+
+/* FORM SECTION */
+.form-section {
+    padding: 60px;
+    background: #f4f4f4;
+}
+
+.form-container {
+    background: white;
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.form-image {
+    width: 45%;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORM */
+.women-form {
+    width: 55%;
+    padding: 30px;
+}
+
+.women-form h2 {
+    margin-bottom: 20px;
+    color: #0a1a3a;
+}
+
+.women-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.women-form input,
+.women-form select,
+.women-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.women-form button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #c70039;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

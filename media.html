@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media | Crime Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .full-content {
+            display: none;
+            margin-top: 30px;
+        }
+        .full-content img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .date {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        /* Active link styling */
+        .navbar nav a.active {
+            color: #ffc107;
+        }
+    </style>
+
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.full-content').forEach(div => {
+                div.style.display = "none";
+            });
+            document.getElementById(id).style.display = "block";
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">CRS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fir.html">Report</a>
+        <a href="media.html" class="active">Media</a> <!-- active class for current page -->
+        <a href="request.html">Request</a> <!-- fixed link -->
+        <a href="womenhelp.html">Women Help</a>
+    </nav>
+</header>
+
+<!-- ===== HERO WITH IMAGE ===== -->
+<section class="hero" style="
+    height: 50vh;
+    background-image: url('images/helllo.jpg');
+    background-size: cover;
+    background-position: center;
+">
+    <div class="hero-content" style="
+        background: rgba(0,0,0,0.6);
+        padding: 25px;
+        border-radius: 8px;
+    ">
+        <h1>Media Center</h1>
+        <p>Latest News & Articles about Crime Reporting System</p>
+    </div>
+</section>
+
+<!-- ================= LATEST NEWS ================= -->
+<section class="services">
+    <h2>Latest News</h2>
+    <div class="service-box">
+        <div class="card" onclick="showContent('news1')" style="cursor:pointer;">
+            <h3>Punjab Police Launches CRS Digital Portal</h3>
+            <p>Online crime reporting system introduced.</p>
+            <span class="date">12 March 2025</span>
+        </div>
+        <div class="card" onclick="showContent('news2')" style="cursor:pointer;">
+            <h3>Online FIR System Improves Transparency</h3>
+            <p>CRS reduces delays in complaint registration.</p>
+            <span class="date">05 April 2025</span>
+        </div>
+        <div class="card" onclick="showContent('news3')" style="cursor:pointer;">
+            <h3>Women Help Desk Strengthened Nationwide</h3>
+            <p>Support services expanded across Pakistan.</p>
+            <span class="date">18 May 2025</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ARTICLES ================= -->
+<section class="services">
+    <h2>Articles / Columns</h2>
+    <div class="service-box">
+        <div class="card" onclick="showContent('article1')" style="cursor:pointer;">
+            <h3>CRS: A Step Towards Digital Pakistan</h3>
+            <p>Modernizing crime reporting through technology.</p>
+            <span class="date">20 March 2025</span>
+        </div>
+        <div class="card" onclick="showContent('article2')" style="cursor:pointer;">
+            <h3>Technology and Police Reforms</h3>
+            <p>Digital systems improve law enforcement.</p>
+            <span class="date">10 April 2025</span>
+        </div>
+        <div class="card" onclick="showContent('article3')" style="cursor:pointer;">
+            <h3>Women Safety & Online Reporting</h3>
+            <p>CRS empowers women through secure platforms.</p>
+            <span class="date">01 May 2025</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FULL CONTENT ================= -->
+<section class="services">
+    <div id="news1" class="full-content">
+        <h2>Punjab Police Launches CRS Digital Portal</h2>
+        <span class="date">Published on: 12 March 2025</span>
+        <img src="images/helllo.jpg">
+        <p>Punjab Police launched the Crime Reporting System to allow citizens to report crimes online without visiting police stations. This step improves transparency and public trust.</p>
+    </div>
+    <div id="news2" class="full-content">
+        <h2>Online FIR System Improves Transparency</h2>
+        <span class="date">Published on: 05 April 2025</span>
+        <img src="images/helllo.jpg">
+        <p>CRS online FIR module reduces delays, improves accountability, and ensures faster response from law enforcement agencies.</p>
+    </div>
+    <div id="news3" class="full-content">
+        <h2>Women Help Desk Strengthened Nationwide</h2>
+        <span class="date">Published on: 18 May 2025</span>
+        <img src="images/helllo.jpg">
+        <p>Women Help Desk under CRS now operates nationwide to provide confidential and quick support to women in need.</p>
+    </div>
+    <div id="article1" class="full-content">
+        <h2>CRS: A Step Towards Digital Pakistan</h2>
+        <span class="date">Article Date: 20 March 2025</span>
+        <img src="images/helllo.jpg">
+        <p>CRS represents Pakistan’s digital transformation in the criminal justice system, making crime reporting easier and safer.</p>
+    </div>
+    <div id="article2" class="full-content">
+        <h2>Technology and Police Reforms</h2>
+        <span class="date">Article Date: 10 April 2025</span>
+        <img src="images/helllo.jpg">
+        <p>Technology-driven platforms like CRS help reduce corruption, improve response time, and enhance transparency.</p>
+    </div>
+    <div id="article3" class="full-content">
+        <h2>Women Safety & Online Reporting</h2>
+        <span class="date">Article Date: 01 May 2025</span>
+        <img src="images/helllo.jpg">
+        <p>CRS provides women with a secure and confidential platform to seek legal help and police protection.</p>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Crime Reporting System | Media Center</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anonymous Tips</title>
+    <link rel="stylesheet" href="anonymous.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">CRS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fir.html">Report</a>
+        <a href="anonymous.html" class="active">Anonymous Tips</a>
+        <a href="womenhelp.html">Women Help</a>
+    </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="anon-hero">
+    <div class="overlay">
+        <h1>Anonymous Tips</h1>
+        <p>Your identity will remain 100% confidential</p>
+    </div>
+</section>
+
+<!-- ===== FORM SECTION ===== -->
+<section class="form-section">
+
+    <div class="form-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="form-image">
+            <img src="images/hehe.jpg" alt="Anonymous Reporting">
+        </div>
+
+        <!-- FORM -->
+        <form class="anon-form" action="submit_anonymous.php" method="POST" enctype="multipart/form-data">
+            <h2>Submit Anonymous Tip</h2>
+
+            <label>Type of Crime</label>
+            <select name="crime_type" required>
+                <option value="">Select</option>
+                <option>Theft</option>
+                <option>Harassment</option>
+                <option>Drug Activity</option>
+                <option>Violence</option>
+                <option>Other</option>
+            </select>
+
+            <label>City</label>
+            <select name="city" required>
+                <option value="">Select City</option>
+                <option>Lahore</option>
+                <option>Rawalpindi</option>
+                <option>Faisalabad</option>
+                <option>Multan</option>
+                <option>Gujranwala</option>
+                <option>Sialkot</option>
+            </select>
+
+            <label>Details</label>
+            <textarea name="description" rows="4" placeholder="Write details here..." required></textarea>
+
+            <label>Upload Evidence (Optional)</label>
+            <input type="file" name="evidence" accept="image/*,video/*,.pdf">
+
+            <button type="submit" name="submit">Submit Tip</button>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Crime Reporting System | Anonymous Tips</p>
+</footer>
+
+</body>
+</html>

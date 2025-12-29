@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Crime Reporting System</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;}
+        body {background:#f4f4f4; color:#333;}
+        .navbar {display:flex; justify-content:space-between; align-items:center; padding:15px 50px; background:#002147; color:white;}
+        .navbar .logo {font-size:24px; font-weight:bold; cursor:pointer;}
+        .navbar nav a {color:white; text-decoration:none; margin-left:25px; font-weight:500; transition:0.3s;}
+        .navbar nav a:hover {color:#ffc107;}
+        .hero {background:#00509e; color:white; text-align:center; padding:80px 20px;}
+        .hero h1 {font-size:48px; margin-bottom:15px;}
+        .hero p {font-size:20px;}
+        .about-section {display:flex; flex-wrap:wrap; max-width:1200px; margin:50px auto; padding:0 20px; gap:30px;}
+        .about-images {flex:1; min-width:250px; display:flex; flex-direction:column; gap:15px;}
+        .about-images img {width:100%; border-radius:10px; object-fit:cover; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+        .about-content {flex:2; min-width:300px;}
+        .about-content h2 {font-size:32px; margin-bottom:20px; color:#002147;}
+        .about-content p {font-size:18px; margin-bottom:15px; line-height:1.7;}
+        .about-content ul {margin-left:20px; margin-bottom:20px;}
+        .about-content ul li {font-size:18px; margin-bottom:10px;}
+        footer {text-align:center; padding:20px; background:#002147; color:white; margin-top:50px;}
+        @media(max-width:900px){.about-section{flex-direction:column; align-items:center;}}
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">CRS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Tell Us About</a>
+        <a href="media.html">Media</a>
+        <a href="request.html">Request</a>
+        <a href="womenhelp.html">Women Help</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>About Crime Reporting System</h1>
+        <p>Learn more about our mission, vision, and services</p>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+
+    <!-- LEFT SIDE IMAGE -->
+    <div class="about-images">
+        <img src="images/hehe.jpg" alt="Crime Reporting">
+    </div>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>The Crime Reporting System (CRS) is a digital platform designed to empower citizens to report crimes efficiently and safely. Our system ensures that every complaint is recorded, monitored, and addressed by the relevant authorities in a timely manner.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to make the criminal justice process accessible, transparent, and secure for all members of society. We aim to reduce delays, improve reporting efficiency, and provide a confidential channel for sensitive cases.</p>
+        
+        <h2>Our Vision</h2>
+        <p>To be a trusted digital interface between citizens and law enforcement agencies, promoting safety, justice, and accountability in the community.</p>
+        
+        <h2>What We Offer</h2>
+        <ul>
+            <li>Online FIR registration from anywhere.</li>
+            <li>Anonymous tips submission for secure reporting.</li>
+            <li>Women Help Desk for confidential assistance and protection.</li>
+            <li>Track the status of your complaint using CNIC and FIR copy.</li>
+            <li>Access to relevant crime-related news and media updates.</li>
+        </ul>
+        
+        <h2>Why Choose CRS</h2>
+        <p>Our system is user-friendly, secure, and designed with the citizen's convenience in mind. By digitizing crime reporting, we help create a safer community where every complaint matters and timely action is taken.</p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Crime Reporting System | Final Year Web Project</p>
+</footer>
+
+</body>
+</html>

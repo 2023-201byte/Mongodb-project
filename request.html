@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIR Status Request - Crime Reporting System</title>
+    <style>
+        /* ===== BASIC RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #002147;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .navbar nav a:hover {
+            color: #ffc107;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background-color: #00509e;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* ===== FORM SECTION ===== */
+        .request-form-section {
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #002147;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #002147;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #00509e;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002147;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:600px){
+            .navbar{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar nav a{
+                margin: 10px 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">CRS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fir.html">Report</a>
+        <a href="media.html">Media</a>
+        <a href="request.html" class="active">Request</a>
+        <a href="womenhelp.html">Women Help</a>
+    </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Check Your FIR Status</h1>
+        <p>Enter your CNIC and upload FIR copy to get status</p>
+    </div>
+</section>
+
+<!-- ===== REQUEST FORM ===== -->
+<section class="request-form-section">
+    <div class="form-container">
+        <h2>FIR Status Request Form</h2>
+        <form action="submit_request.php" method="post" enctype="multipart/form-data">
+            
+            <!-- CNIC Input -->
+            <label for="cnic">Enter Your CNIC Number:</label>
+            <input type="text" id="cnic" name="cnic" placeholder="12345-1234567-1" required pattern="\d{5}-\d{7}-\d{1}">
+
+            <!-- FIR Copy Upload -->
+            <label for="firCopy">Upload FIR Copy:</label>
+            <input type="file" id="firCopy" name="firCopy" accept="image/*,application/pdf" required>
+
+            <!-- Submit Button -->
+            <button type="submit" name="submit">Check Status</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Crime Reporting System | Final Year Web Project</p>
+</footer>
+
+</body>
+</html>

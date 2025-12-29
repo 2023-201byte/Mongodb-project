@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">CRS</div>
+    <nav>
+        <a href="fir.html">Report</a>
+        <a href="about.html">Tell Us About</a> <!-- changed from # to about.html -->
+        <a href="media.html">Media</a>
+        <a href="request.html">Request</a>
+        <a href="womenhelp.html">Women Help</a>
+    </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Crime Reporting System</h1>
+        <p>Your digital criminal justice network</p>
+        <button onclick="window.location.href='fir.html'">
+            REPORT A CRIME
+        </button>
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+        <!-- FIR -->
+        <div class="card" onclick="window.location.href='fir.html'" style="cursor:pointer;">
+            <img src="images/fir.jpg" alt="FIR">
+            <h3>Online FIR</h3>
+            <p>Register FIR securely from anywhere.</p>
+        </div>
+
+        <!-- Anonymous Tips -->
+        <div class="card" onclick="window.location.href='anonymous.html'" style="cursor:pointer;">
+            <img src="images/anonymous.jpg" alt="Anonymous Tips">
+            <h3>Anonymous Tips</h3>
+            <p>Report crime without revealing identity.</p>
+        </div>
+
+        <!-- Women Help Desk -->
+        <div class="card" onclick="window.location.href='womenhelp.html'" style="cursor:pointer;">
+            <img src="images/womenhelp.jpg" alt="Women Help Desk">
+            <h3>Women Help Desk</h3>
+            <p>Confidential help and protection services for women.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== STATISTICS ===== -->
+<section class="stats">
+    <div class="stat">
+        <h1>319,031</h1>
+        <p>Total Complaints</p>
+    </div>
+    <div class="stat">
+        <h1>309,719</h1>
+        <p>Disposed</p>
+    </div>
+    <div class="stat">
+        <h1>9,312</h1>
+        <p>Pending</p>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Crime Reporting System | Final Year Web Project</p>
+</footer>
+
+</body>
+</html>
